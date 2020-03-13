@@ -74,6 +74,7 @@ img {
   background-size: contain;
   width: 100%;
   min-height: 300px;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -86,8 +87,7 @@ img {
   opacity: 0.8;
   width: 100%;
   height: 40px;
-  background-color: var(--main-trim);
-
+  background-color: var(--main-comp);
   box-sizing: border-box;
   z-index: 10;
 }
@@ -110,12 +110,14 @@ img {
   font-size: 1.2rem;
   padding: 0 0 0 2rem;
   color: var(--main-white);
+  transition: transform .2s;
 }
 
 .nav-list a:hover {
-  text-shadow: 2px 2px 3px var(--main-comp);
+  text-shadow: -25px 15px 15px silver;
   list-style: none;
   text-decoration: none;
+  transform: scale(1.5);
 }
 
 
