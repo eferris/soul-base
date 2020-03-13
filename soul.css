@@ -205,7 +205,7 @@ img {
 }
 .s-about-txt
 {
-    align-items: stretch;
+    align-items: center;
     background: black;
     color: white;
     height: 400px;
@@ -296,8 +296,9 @@ img {
     font-size: 1.4rem;
   }
   p {
-    font-size: 1rem;
-    color: yellow !important;
+    font-size: .8rem;
+/*    color: yellow !important; */
+    color: white !important;
   }
 
   #s-banner
@@ -316,7 +317,7 @@ img {
   .s-about
   {
       display: grid;
-      grid-gap: 50px;
+      grid-gap: 30px;
       justify-content: space-around;
       grid-template-columns: auto auto;
       background-color: black;
@@ -343,14 +344,15 @@ img {
     font-size: 2.2rem;
   }
   h2 {
-    font-size: 0rem;
+    font-size: .9rem;
   }
   h5 {
-    font-size: 0rem;
+    font-size: 1.1rem;
   }
   p {
-    color:green !important;
-    font-size: .9rem;
+/*    color:green !important; */
+    color:white !important;
+    font-size: .8rem;
   }
 }
 
@@ -370,13 +372,14 @@ img {
     font-size: 2rem;
   }
   h2 {
-    font-size: 0rem;
+    font-size: .6rem;
   }
   h5 {
-    font-size: 0rem;
+    font-size: 0.9rem;
   }
   p {
-    color:red !important;
+/*    color:red !important;  */
+    color:white !important;
     font-size: .6rem;
   }
 }
