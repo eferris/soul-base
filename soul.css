@@ -67,7 +67,7 @@ img {
 
 #s-nav  
 {
-  background-image: url(/Users/new/Dev/soul/soul-essential-logo.png);
+  background-image: url(images/soul-essential-logo.png);
   background-color: var(--main-trim);
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@ img {
 #s-banner-pic {
     height: 400px;
     width: 900px;
-    background-image: url(banner.jpg);
+    background-image: url(images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,21 +247,21 @@ img {
 
 .pic-1
 {
-   background-image: url(psychodelic.jpg);
+   background-image: url(images/psychodelic.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 .pic-2
 {
-   background-image: url(eric.jpeg);
+   background-image: url(images/eric.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 .pic-3
 {
-   background-image: url(amy.jpeg);
+   background-image: url(images/amy.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
