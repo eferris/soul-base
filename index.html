@@ -1,156 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script crossorigin 
-        src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin 
-        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <meta charset="UTF-8">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <meta charset="UTF-8" />
     <meta name=viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Soul Essential</title>
-
-
-   <!-- BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- BOOTSTRAP JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400|Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
-
-    <!-- FAVICON -->
-    <link rel="icon" href="images/temp favicon.ico">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300i,400|Roboto+Mono:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON 
+    <link rel="icon" href="images/temp favicon.ico" />
+        -->
     <!-- FONT-AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="soul.css">
-</head>
-
-<body>
-  <div id="app">
-
-
-    <!-- START NAV -->
-
-    <div id="s-nav">
-    <nav  class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="index.html">home</a>
-        </li>
-        <li>
-          <a href="calendar.html">calendar</a>
-        </li>
-        <li>
-          <a href="video.html">video</a>
-        </li>
-        <li>
-          <a href="contact.html">contact</a>
-        </li>
-      </ul>
-    </nav>
-    </div>
-    <!-- END NAV -->
-
-    <div id="s-banner">
-      <div id="s-banner-pic">
+    <link rel="stylesheet" type="text/css" href="soul.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- START NAV -->
+      <div id="s-nav">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="calendar.html">calendar</a>
+            </li>
+            <li>
+              <a href="video.html">video</a>
+            </li>
+            <li>
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div id="s-banner-txt">
-        <h1>Essential Classics</h1>
-        <h1>in the Pocket</h1>
-        <hr color=white>
-        <h5>Danceable Classic Soul, R&B, Funk & Blues</h5>
-        <p>Subscribe to our YouTube Channel!</p>
-        <button>Book Now</button>
-        <p>Call +1.520.977.1708</p>
-        <hr color=white>
+      <!-- END NAV -->
+
+      <div id="s-banner">
+        <div id="s-banner-pic"></div>
+        <div id="s-banner-txt">
+          <h1>Essential Classics</h1>
+          <h1>in the Pocket</h1>
+          <hr color="white" />
+          <h5>Danceable Classic Soul, R&B, Funk & Blues</h5>
+          <p>Subscribe to our YouTube Channel!</p>
+          <button>Book Now</button>
+          <p>Call +1.520.977.1708</p>
+          <hr color="white" />
+        </div>
       </div>
-    </div>
-    <div id="s-carousel">
-          <div id="carouselSoul" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-
-              <div class="carousel-item quote active">
-                 <img class="d-block w-100" src="img_1.jpg" height=400px width=600px> 
-              </div>
-              <div class="carousel-item quote">
-                 <img class="d-block w-100" src="img_2.jpg" height=400px width=600px> 
-              </div>
-              <div class="carousel-item quote">
-                 <img class="d-block w-100" src="img_3.jpg" height=400px width=600px> 
-              </div>
-
-              <a class="carousel-control-prev" 
-                  href="#carouselSoul" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" 
-                    href="#carouselSoul" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-               </a>
-
+      <div id="s-carousel">
+        <div id="carouselSoul" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1019.JPG/:/rs=w:2600,h:1600')">
               </div>
             </div>
+            <div class="carousel-item">
+              <div class="carousel-img" 
+              style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7168.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6192.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6180.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3803.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5589.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6191.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+             <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1043-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5585.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5598.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/bw152A3969.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/b261085d-6018-469e-a239-3a209d3c301c.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/fb0b1feb-9e27-42a6-ba9b-e87413bf6082.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5594.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5602.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3754.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7172.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6192%202.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/steam1.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3927.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3844.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3904.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1025-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4304.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4018.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1044.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3827.jpg/:/cr=t:0%25,l:6.88%25,w:70.42%25,h:70.42%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5600.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4065.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6181.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/bw152A4304.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/bw152A4065.jpg/:/cr=t:0%25,l:0%25,w:95.52%25,h:95.57%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3738.jpg/:/cr=t:0%25,l:4.88%25,w:52.63%25,h:52.63%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1045.PNG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1029-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/%20grp152A3731.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4381.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4247%20copy.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6124.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1029.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6165.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6177.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1022-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6162.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6153.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6126.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6133.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6155.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1045-0001.PNG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6136.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6158.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6160.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6176.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5953.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6173.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1023-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_0771.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6190.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_0772.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6697.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5465.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6684.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6698.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_2736.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6695.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6784.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1020-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6587.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6789.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_0809.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1028.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_0785.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6362.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7224.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1919.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/68218fa4-ca16-4a9b-a7ee-82421bea54fa.jpg/:/cr=t:13.24%25,l:13.24%25,w:73.53%25,h:73.53%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7169.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1024-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/97202b2c-d0f1-4095-bd9c-48613eb4e5f6.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3804.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/431f65ce-6102-44d6-b617-e99e9483f8fd.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/858b5cdd-9f02-41db-8c75-b19ba08fce57.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/5e218957-864a-4f73-bd23-6025bf5b7e5c.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/24d6ba59-f416-4236-9e3a-6143ec7b7ee4.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A3744.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/e6665745-e943-4007-9b07-87d61adaad4b.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/cb6c8bcb-396e-4382-a8b5-35e573ccd326.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7171.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/22356a51-f768-422f-ad09-88b0956404d8.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1028-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/64d9c446-4ed5-48e1-97aa-973b74ab2601.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5588.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7170.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_6193.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/152A4003.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/b2ed7858-852e-4fa9-8898-6f3686b54c21.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/a4bb3e58-8d8d-4e10-9bea-7654e611adb3.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_5622.jpg/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_1019-0001.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img"
+                style="background-image: url('https://img1.wsimg.com/isteam/ip/7f21718c-1a56-4d09-8212-a5d93f44850a/IMG_7173.JPG/:/rs=w:2600,h:1600')">
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselSoul"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselSoul"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="s-social">
+        <!-- Add font awesome icons -->
+        <a
+          href="https://www.facebook.com/SoulEssentialMusic/"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.youtube.com/c/soul-essential/"
+          target="_blank"
+          class="fa fa-youtube"
+        ></a>
+        <a
+          href="https://www.instagram.com/soulessential.music/"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+      </div>
+      <h1>ABOUT US</h1>
+      <div class="s-about">
+        <div class="s-about-pic pic-1"></div>
+        <div class="s-about-txt txt-1">
+          <h2>Join Us!</h2>
+          <p>
+            We play Venues, Weddings, Corporate Events and Festivals. Find Us On
+            Facebook at @SoulEssentialMusic
+          </p>
+        </div>
+        <div class="s-about-txt txt-2">
+          <h2>Planning an Event?</h2>
+          <p>
+            We ensure that your musical event will be stress-free and
+            well-organized. So sit back, relax and leave this to us!
+          </p>
+        </div>
+        <div class="s-about-pic pic-2"></div>
+        <div class="s-about-pic pic-3"></div>
+        <div class="s-about-txt txt-3">
+          <h2>A Touch of Style</h2>
+          <p>
+            Need a Master of Ceremonies to make your event go smoothly? We offer
+            an integrated DJ and other entertainment services to tie your night
+            together for your guests with a touch of style.
+          </p>
+        </div>
+      </div>
     </div>
-    <div id="s-social">
-      <!-- Add font awesome icons -->
-      <a href="https://www.facebook.com/SoulEssentialMusic/" 
-          target="_blank" class="fa fa-facebook"></a>
-      <a href="https://www.youtube.com/c/soul-essential/" 
-          target="_blank" class="fa fa-youtube"></a>
-      <a href="https://www.instagram.com/soulessential.music/" 
-          target="_blank" class="fa fa-instagram"></a>
-   </div>
-
-    <hr>    
-    <h1>ABOUT US</h1>
-    <hr>
-    <div class="s-about">
-      
-      <div class="s-about-pic pic-1">
-      </div>
-      <div class="s-about-txt txt-1">
-        <h2>Join Us!</h2>
-        <p>We play Venues, Weddings, Corporate Events and Festivals. 
-          Find Us On Facebook at @SoulEssentialMusic</p>
-      </div>
-      <div class="s-about-txt txt-2">
-        <h2>Planning an Event?</h2>
-        <p>We take pride in providing the best musical event production 
-          in our area. We ensure that your musical event will be 
-          stress-free and well-organized. 
-          So sit back, relax and leave this to us!</p>
-      </div>
-      <div class="s-about-pic pic-2">
-      </div>
-      <div class="s-about-pic pic-3">
-      </div>
-      <div class="s-about-txt txt-3">
-        <h2>A Touch of Style</h2>
-        <p>Need a Master of Ceremonies to make your event go smoothly?
-          We offer an integrated DJ and other entertainment services
-          to tie your night together for your guests with a touch of style.</p>
-      </div>
-    </div>
-  </div>
-  <!-- START FOOTER  -->
-  <div class="section">
+    <!-- START FOOTER  -->
+    <div class="section">
       <div class="footer">
-            <p class="footer-text" style="margin:0"><span>Copyright © 2020 Red Haired Lion Inc - All Rights Reserved.</span></p>
+        <p class="footer-text" style="margin:0">
+          <span
+            >Copyright © 2020 Red Haired Lion Inc - All Rights Reserved.</span
+          >
+        </p>
       </div>
-  </div>
-  <!-- END FOOTER  -->
-</body>
-
-
+    </div>
+    <!-- END FOOTER  -->
+  </body>
 </html>
