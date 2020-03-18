@@ -39,13 +39,13 @@ h1 {
   font-size: 2.6rem;
 }
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.0rem;
 }
 h5 {
   font-size: 1.4rem;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 button {
@@ -120,7 +120,6 @@ img {
   transform: scale(1.5);
 }
 
-
 #s-banner
 {
     display: flex;
@@ -134,25 +133,26 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 50%;
 }
 
 #s-banner-pic {
     height: 400px;
-    width: 600px;
+    width: 900px;
     background-image: url(banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
   }
 
 #s-social
 {
     display: flex;
     background: black;
-    height: 60px;
+    height: 150px;
     justify-content: center;
     align-items: center;
+    padding: 25px 0px;
 }
 
 .fa {
@@ -188,11 +188,18 @@ img {
     justify-content: center;
     background: black;
     width: 100%;
-    padding: 150px;
+    height: 400px;
+    margin: 40px;
 }
 
 #carouselSoul {
     width: 50vw;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
 }
 
 .s-about
@@ -204,14 +211,17 @@ img {
     background-color: black;
     width: 100vw;
     color: black;
+    margin: 60px 0px;
 }
 .s-about-txt
 {
     align-items: center;
+    justify-content: center;
     background: black;
     color: white;
     height: 400px;
     width: 50vw;
+    /* margin:5px; */
 }
 .s-about-pic
 {
@@ -240,18 +250,21 @@ img {
    background-image: url(psychodelic.jpg);
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
 }
 .pic-2
 {
    background-image: url(eric.jpeg);
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
 }
 .pic-3
 {
    background-image: url(amy.jpeg);
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
 }
 
 
@@ -288,7 +301,7 @@ img {
   }
   
   h1 {
-    font-size: 2.4rem
+    font-size: 2.2rem
   }
   h2 {
     font-size: 1.1rem;
@@ -298,7 +311,7 @@ img {
     font-size: 1.4rem;
   }
   p {
-    font-size: .8rem;
+    font-size: .6rem;
 /*    color: yellow !important; */
     color: white !important;
   }
@@ -343,7 +356,7 @@ img {
 
   
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
   }
   h2 {
     font-size: .9rem;
@@ -371,7 +384,7 @@ img {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2 {
     font-size: .6rem;
