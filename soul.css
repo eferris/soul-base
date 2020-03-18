@@ -67,7 +67,7 @@ img {
 
 #s-nav  
 {
-  background-image: url(images/soul-essential-logo.png);
+  background-image: url('images/soul-essential-logo.png');
   background-color: var(--main-trim);
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@ img {
 #s-banner-pic {
     height: 400px;
     width: 900px;
-    background-image: url(./images/banner.jpg);
+    background-image: url('images/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
