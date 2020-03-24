@@ -12,7 +12,7 @@
     --dark-gray: #181818;
     --main-trim: purple;
     --main-comp: black;
-    font-size: 20px;
+    font-size: 22px;
   }
 
 * {
@@ -28,12 +28,27 @@ body {
     background-color: var(--main-comp);
 }
 
+
+hr {
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+
+
 h1, h2 {
     text-align: center;
     font-weight: 400;
     line-height: 35px;
     color: var(--main-white);
   }
+
 
 h1 {
   font-size: 2.6rem;
@@ -43,6 +58,8 @@ h2 {
 }
 h5 {
   font-size: 1.4rem;
+  color:white;
+
 }
 p {
   font-size: 1.0rem;
@@ -69,11 +86,11 @@ img {
 {
   background-image: url('images/soul-essential-logo.png');
   background-color: var(--main-trim);
-  background-position: center;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
   box-sizing: border-box;
 }
 
@@ -133,13 +150,13 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 #s-banner-pic {
     height: 400px;
     width: 900px;
-    background-image: url('images/banner.jpg');
+    background-image: url(images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,7 +328,7 @@ img {
     font-size: 1.4rem;
   }
   p {
-    font-size: .6rem;
+    font-size: .8rem;
 /*    color: yellow !important; */
     color: white !important;
   }
@@ -344,13 +361,19 @@ img {
 @media (max-width: 768px) 
 {
 
+.nav-list li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+ 
   #s-banner-txt {
     padding: 20px;
   }
 
 
   .nav-list li {
-    font-size: 1.rem;
+    font-size: 1rem;
     padding: 10px;
   }
 
@@ -365,8 +388,8 @@ img {
     font-size: 1.1rem;
   }
   p {
-/*    color:green !important; */
-    color:white !important;
+    /* color:white !important; */
+    color:green !important; 
     font-size: .8rem;
   }
 }
@@ -393,8 +416,8 @@ img {
     font-size: 0.9rem;
   }
   p {
-/*    color:red !important;  */
-    color:white !important;
+ /*   color:white !important; */
+    color:red !important;  
     font-size: .6rem;
   }
 }
