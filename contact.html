@@ -32,11 +32,11 @@
 
     <!-- STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="soul.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 
-<body>
-  <div id="app">
-
+<body onload="onLoadPage()">
+  <div id="s-contact">
 
     <!-- START NAV -->
 
@@ -44,7 +44,7 @@
     <nav  class="nav">
       <ul class="nav-list">
         <li>
-          <a href="about.html"">about</a>
+          <a href="about.html"">home</a>
         </li>
         <li>
           <a href="#about">calendar</a>
@@ -60,22 +60,28 @@
     </div>
     <!-- END NAV -->
 
+    <div id="s-contact-info">
+
+      <form onsubmit="return false;">
+
+      <div id="start">
+          <h2>Thanks for Sharing your Info!</h2>
+          <h2>-- Amy V & Soul Essential --</h2>
+        <div class="centerit">
+          <input placeholder="first_name" type="fname" 
+                                 id="inText" name="fname">
+          <input placeholder="last_name" type="lname" id="inText" name="lname">
+          <input placeholder="email_id" type="email" id="inText" name="email">
+          <input type="button" id="go-stub" value="Hit Me!"></input>
+        </div>
+        <div id="result"></div>
+        <img src="images/amy.jpeg"/>
+      </div>
+
+      </form>
+
+
     </div>
-    <div id="s-about">
-      <div id="s-about-pic">
-      </div>
-      <div id="s-about-txt">
-      </div>
-      <div id="s-about-txt">
-      </div>
-      <div id="s-about-pic">
-      </div>
-      <div id="s-about-pic">
-      </div>
-      <div id="s-about-txt">
-      </div>
-    </div>
-  </div>
 
     <div id="s-social">
        <!-- Add font awesome icons -->
@@ -92,7 +98,12 @@
             <p class="footer-text">© 2020 Red Haired Lion</p>
       </div>
   </div>
+
   <!-- END FOOTER  -->
+
+  <!-- Script -->
+  <script type="text/javascript" src="contact.js"></script>
+
 </body>
 
 

@@ -1,0 +1,32 @@
+#s-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+input[type="button"] {
+    color: var(--main-trim);
+    margin: 50px;
+    border-radius: 5%;
+    width: 20vw;;
+    height: 50px;
+}
+
+input  {
+    margin: 10px;
+    width: 60vw;;
+}
+
+.centerit {
+  margin: 10%;
+}
+
+#s-contact-info img {
+    max-height:300px;
+    width: auto;
+    margin: 0 10%;
+}
