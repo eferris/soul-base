@@ -1,32 +1,45 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 #s-contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
 }
-
-
 
 input[type="button"] {
     color: var(--main-trim);
     margin: 50px;
     border-radius: 5%;
-    width: 20vw;;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    right: 25%;
+    bottom: 10%;
+    position: absolute;
 }
 
 input  {
     margin: 10px;
-    width: 60vw;;
+    width: 35vw;
 }
 
-.centerit {
-  margin: 10%;
+.s-contact-input {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
 }
 
-#s-contact-info img {
-    max-height:300px;
+#s-contact-pic {
+    max-height:700px;
+    height: 700px;
     width: auto;
-    margin: 0 10%;
+    position: relative;
+    margin: 0;
 }
