@@ -14,7 +14,7 @@ function myLogic() {
 
 //  Add listeners on page load
 function onLoadPage() {
-// document.querySelector("#start").innerText = "";
+document.querySelector("#msgTxt").innerText = "Dear Amy ... ";
 
 //  add enter-key listener
 //
