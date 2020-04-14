@@ -1,0 +1,6 @@
+#s-video-player {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  z-index: 10;
+}
