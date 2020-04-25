@@ -12,7 +12,7 @@ function myLogic() {
 
       // The data to send (will be converted to a query string)
       data: {
-          id: fnameTxt
+          id: myFname.value
       },
 
       // Whether this is a POST or GET request
