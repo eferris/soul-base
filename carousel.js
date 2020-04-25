@@ -16,7 +16,7 @@ carouselSlide.style.transform =
              'translateX(' + ( -size * counter ) + 'px)';
 
 
-/*
+
 prevBtn.addEventListener('click', () => {
 
   if ( counter <= 0 ) return;
@@ -28,7 +28,7 @@ prevBtn.addEventListener('click', () => {
              'translateX(' + ( -size * counter ) + 'px)';
 
 });
-*/
+
 
 nextBtn.addEventListener('click', () => {
 
