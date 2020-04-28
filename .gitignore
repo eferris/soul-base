@@ -1,2 +1,2 @@
-python/token.pickle
-python/credentials.json
+*.pickle
+credentials.json
